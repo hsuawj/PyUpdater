@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="successGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#66bb6a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4caf50;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="warningGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffa726;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff9800;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="errorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef5350;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f44336;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Compatible Icon -->
+  <g id="compatible" transform="translate(50, 50)">
+    <circle cx="0" cy="0" r="30" fill="url(#successGradient)" stroke="#2e7d32" stroke-width="2"/>
+    <path d="M-15 -3 L-5 7 L15 -15" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <text x="0" y="50" text-anchor="middle" font-size="12" font-weight="bold" fill="#2e7d32">Compatible</text>
+  </g>
+  
+  <!-- Incompatible Icon -->
+  <g id="incompatible" transform="translate(200, 50)">
+    <circle cx="0" cy="0" r="30" fill="url(#errorGradient)" stroke="#c62828" stroke-width="2"/>
+    <path d="M-15 -15 L15 15 M-15 15 L15 -15" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    <text x="0" y="50" text-anchor="middle" font-size="12" font-weight="bold" fill="#c62828">Breaking</text>
+  </g>
+  
+  <!-- Update Available Icon -->
+  <g id="update" transform="translate(350, 50)">
+    <circle cx="0" cy="0" r="30" fill="url(#warningGradient)" stroke="#e65100" stroke-width="2"/>
+    <path d="M0 -20 L0 10 M-8 2 L0 10 L8 2" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text x="0" y="50" text-anchor="middle" font-size="12" font-weight="bold" fill="#e65100">Update</text>
+  </g>
+  
+  <!-- Package Icon -->
+  <g id="package" transform="translate(50, 150)">
+    <rect x="-25" y="-25" width="50" height="50" fill="#2196f3" rx="8" stroke="#1565c0" stroke-width="2"/>
+    <rect x="-18" y="-18" width="36" height="36" fill="none" stroke="#fff" stroke-width="2" rx="4"/>
+    <circle cx="-8" cy="-8" r="4" fill="#fff"/>
+    <circle cx="8" cy="8" r="4" fill="#fff"/>
+    <text x="0" y="45" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Package</text>
+  </g>
+  
+  <!-- Version Icon -->
+  <g id="version" transform="translate(200, 150)">
+    <rect x="-25" y="-25" width="50" height="50" fill="#9c27b0" rx="8" stroke="#6a1b9a" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" font-size="16" font-weight="bold" fill="#fff">V</text>
+    <text x="0" y="45" text-anchor="middle" font-size="12" font-weight="bold" fill="#6a1b9a">Version</text>
+  </g>
+  
+  <!-- API Icon -->
+  <g id="api" transform="translate(350, 150)">
+    <rect x="-25" y="-25" width="50" height="50" fill="#607d8b" rx="8" stroke="#37474f" stroke-width="2"/>
+    <circle cx="-10" cy="-10" r="3" fill="#fff"/>
+    <circle cx="0" cy="-10" r="3" fill="#fff"/>
+    <circle cx="10" cy="-10" r="3" fill="#fff"/>
+    <line x1="-10" y1="-5" x2="10" y2="5" stroke="#fff" stroke-width="2"/>
+    <line x1="-10" y1="5" x2="10" y2="15" stroke="#fff" stroke-width="2"/>
+    <text x="0" y="45" text-anchor="middle" font-size="12" font-weight="bold" fill="#37474f">PyPI API</text>
+  </g>
+  
+  <!-- Progress Icon -->
+  <g id="progress" transform="translate(50, 250)">
+    <rect x="-25" y="-10" width="50" height="20" fill="none" stroke="#666" stroke-width="2" rx="10"/>
+    <rect x="-23" y="-8" width="30" height="16" fill="#4caf50" rx="8"/>
+    <text x="0" y="35" text-anchor="middle" font-size="12" font-weight="bold" fill="#666">Progress</text>
+  </g>
+  
+  <!-- CLI Icon -->
+  <g id="cli" transform="translate(200, 250)">
+    <rect x="-25" y="-15" width="50" height="30" fill="#212121" rx="4" stroke="#424242" stroke-width="2"/>
+    <text x="-20" y="-5" font-size="8" font-family="monospace" fill="#4caf50">$</text>
+    <rect x="-15" y="-8" width="2" height="8" fill="#4caf50"/>
+    <text x="0" y="35" text-anchor="middle" font-size="12" font-weight="bold" fill="#424242">Terminal</text>
+  </g>
+  
+  <!-- Export Icon -->
+  <g id="export" transform="translate(350, 250)">
+    <rect x="-25" y="-20" width="50" height="40" fill="#ff5722" rx="6" stroke="#d84315" stroke-width="2"/>
+    <path d="M0 -10 L0 5 M-8 -3 L0 5 L8 -3" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <rect x="-15" y="8" width="30" height="4" fill="#fff" rx="2"/>
+    <text x="0" y="40" text-anchor="middle" font-size="12" font-weight="bold" fill="#d84315">Export</text>
+  </g>
+</svg>

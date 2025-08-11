@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="stepGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bbdefb;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000020"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="#fafafa"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1565c0">PDR Workflow Process</text>
+  
+  <!-- Step 1: Scan Packages -->
+  <g transform="translate(80, 80)">
+    <rect x="0" y="0" width="120" height="80" fill="url(#stepGradient)" rx="10" stroke="#1976d2" stroke-width="2" filter="url(#shadow)"/>
+    <circle cx="60" cy="25" r="15" fill="#4caf50"/>
+    <path d="M50 25 L57 32 L70 18" stroke="#fff" stroke-width="3" fill="none"/>
+    <text x="60" y="55" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Scan Installed</text>
+    <text x="60" y="70" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Packages</text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <path d="M220 120 L260 120" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 2: Query PyPI -->
+  <g transform="translate(280, 80)">
+    <rect x="0" y="0" width="120" height="80" fill="url(#stepGradient)" rx="10" stroke="#1976d2" stroke-width="2" filter="url(#shadow)"/>
+    <circle cx="60" cy="25" r="15" fill="#ff9800"/>
+    <rect x="52" y="17" width="16" height="16" fill="#fff" rx="2"/>
+    <circle cx="57" cy="22" r="2" fill="#ff9800"/>
+    <circle cx="63" cy="22" r="2" fill="#ff9800"/>
+    <circle cx="57" cy="28" r="2" fill="#ff9800"/>
+    <circle cx="63" cy="28" r="2" fill="#ff9800"/>
+    <text x="60" y="55" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Query PyPI</text>
+    <text x="60" y="70" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">API</text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <path d="M420 120 L460 120" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 3: Compare Versions -->
+  <g transform="translate(480, 80)">
+    <rect x="0" y="0" width="120" height="80" fill="url(#stepGradient)" rx="10" stroke="#1976d2" stroke-width="2" filter="url(#shadow)"/>
+    <circle cx="60" cy="25" r="15" fill="#9c27b0"/>
+    <text x="60" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">VS</text>
+    <text x="60" y="55" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Compare</text>
+    <text x="60" y="70" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Versions</text>
+  </g>
+  
+  <!-- Arrow 3 -->
+  <path d="M620 120 L660 120" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Step 4: Display Results -->
+  <g transform="translate(680, 80)">
+    <rect x="0" y="0" width="100" height="80" fill="url(#stepGradient)" rx="10" stroke="#1976d2" stroke-width="2" filter="url(#shadow)"/>
+    <circle cx="50" cy="25" r="15" fill="#2196f3"/>
+    <rect x="42" y="17" width="16" height="16" fill="#fff" rx="2"/>
+    <line x1="45" y1="20" x2="55" y2="20" stroke="#2196f3" stroke-width="1"/>
+    <line x1="45" y1="23" x2="55" y2="23" stroke="#2196f3" stroke-width="1"/>
+    <line x1="45" y1="26" x2="55" y2="26" stroke="#2196f3" stroke-width="1"/>
+    <line x1="45" y1="29" x2="55" y2="29" stroke="#2196f3" stroke-width="1"/>
+    <text x="50" y="55" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Display</text>
+    <text x="50" y="70" text-anchor="middle" font-size="12" font-weight="bold" fill="#1565c0">Results</text>
+  </g>
+  
+  <!-- Feature boxes -->
+  <g transform="translate(80, 220)">
+    <rect x="0" y="0" width="160" height="120" fill="#e8f5e8" rx="8" stroke="#4caf50" stroke-width="2"/>
+    <text x="80" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#2e7d32">Package Sources</text>
+    <text x="20" y="40" font-size="11" fill="#2e7d32">• Installed packages</text>
+    <text x="20" y="55" font-size="11" fill="#2e7d32">• requirements.txt</text>
+    <text x="20" y="70" font-size="11" fill="#2e7d32">• Editable installs</text>
+    <text x="20" y="85" font-size="11" fill="#2e7d32">• VCS dependencies</text>
+    <text x="20" y="100" font-size="11" fill="#2e7d32">• Local packages</text>
+  </g>
+  
+  <g transform="translate(280, 220)">
+    <rect x="0" y="0" width="160" height="120" fill="#fff3e0" rx="8" stroke="#ff9800" stroke-width="2"/>
+    <text x="80" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#e65100">API Features</text>
+    <text x="20" y="40" font-size="11" fill="#e65100">• Batch processing</text>
+    <text x="20" y="55" font-size="11" fill="#e65100">• Intelligent caching</text>
+    <text x="20" y="70" font-size="11" fill="#e65100">• Rate limiting</text>
+    <text x="20" y="85" font-size="11" fill="#e65100">• Error handling</text>
+    <text x="20" y="100" font-size="11" fill="#e65100">• Concurrent requests</text>
+  </g>
+  
+  <g transform="translate(480, 220)">
+    <rect x="0" y="0" width="160" height="120" fill="#f3e5f5" rx="8" stroke="#9c27b0" stroke-width="2"/>
+    <text x="80" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#6a1b9a">SemVer Analysis</text>
+    <text x="20" y="40" font-size="11" fill="#6a1b9a">• Major updates</text>
+    <text x="20" y="55" font-size="11" fill="#6a1b9a">• Minor updates</text>
+    <text x="20" y="70" font-size="11" fill="#6a1b9a">• Patch updates</text>
+    <text x="20" y="85" font-size="11" fill="#6a1b9a">• Pre-release handling</text>
+    <text x="20" y="100" font-size="11" fill="#6a1b9a">• Compatibility check</text>
+  </g>
+  
+  <g transform="translate(680, 220)">
+    <rect x="0" y="0" width="100" height="120" fill="#e1f5fe" rx="8" stroke="#2196f3" stroke-width="2"/>
+    <text x="50" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill="#1565c0">Output</text>
+    <text x="10" y="40" font-size="11" fill="#1565c0">• Table view</text>
+    <text x="10" y="55" font-size="11" fill="#1565c0">• JSON export</text>
+    <text x="10" y="70" font-size="11" fill="#1565c0">• CSV export</text>
+    <text x="10" y="85" font-size="11" fill="#1565c0">• Colored output</text>
+    <text x="10" y="100" font-size="11" fill="#1565c0">• Progress bars</text>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+</svg>
